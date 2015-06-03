@@ -27,7 +27,7 @@ syn keyword hiveKeyword	successful synonym table then to trigger uid
 syn keyword hiveKeyword	unique user validate values view whenever hivevar
 syn keyword hiveKeyword	where with option order pctfree privileges procedure
 syn keyword hiveKeyword	public resource return row rowlabel rownum rows
-syn keyword hiveKeyword	session share size smallint type using full outer join right inner 
+syn keyword hiveKeyword	session share size smallint type using full outer join left right inner 
 syn keyword hiveKeyword	format delimited fields terminated by collection items external
 syn keyword hiveKeyword	stored sequencefile partitioned data local inpath overwrite clustered buckets sorted
 syn keyword hiveKeyword	keys extended textfile location distribute directory tablesample using reduce lateral
