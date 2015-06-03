@@ -33,8 +33,9 @@ syn keyword hiveKeyword   stored sequencefile partitioned data local inpath over
 syn keyword hiveKeyword   keys extended textfile location distribute directory tablesample using reduce lateral
 syn keyword hiveKeyword   case when
 
+syn match   hiveOperator  "\(!\||\|&\|+\|-\|<\|>\|=\|%\|\/\|*\|\~\|\^\)"
+syn keyword hiveOperator  not and or 
 
-syn keyword hiveFunction  not and or < <= == = >= > <> !=
 syn keyword hiveFunction  if in any some all between exists
 syn keyword hiveFunction  like escape rlike regexp coalesce
 syn keyword hiveFunction  union intersect minus
@@ -99,11 +100,11 @@ if version >= 508 || !exists("did_sql_syn_inits")
   endif
 
   HiLink hiveComment	Comment
-  "HiLink sqlKeyword	sqlSpecial
   HiLink hiveKeyword	Identifier
+  HiLink hiveOperator	Operator
   HiLink hiveNumber	Number
   HiLink hiveFunction   Function	
-  HiLink hiveSpecial	Boolean
+  HiLink hiveSpecial	Special
   HiLink hiveStatement	Statement
   HiLink hiveString	String
   HiLink hiveType	Type
