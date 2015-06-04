@@ -31,7 +31,7 @@ syn keyword hiveKeyword   session share size smallint type using full outer join
 syn keyword hiveKeyword   format delimited fields terminated by collection items external
 syn keyword hiveKeyword   stored sequencefile partitioned data local inpath overwrite clustered buckets sorted
 syn keyword hiveKeyword   keys extended textfile location distribute directory tablesample using reduce lateral
-syn keyword hiveKeyword   case when
+syn keyword hiveKeyword   case when limit
 
 syn match   hiveOperator  "\(!\||\|&\|+\|-\|<\|>\|=\|%\|\/\|*\|\~\|\^\)"
 syn keyword hiveOperator  not and or 
